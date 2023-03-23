@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<button mat-button [matMenuTriggerFor]="menu"><i class="fa-solid fa-bars"></i></button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item><i class="fa-solid fa-box"></i>Product</button>
+  <button mat-menu-item><i class="fa-sharp fa-solid fa-code"></i>Developer</button>
+  <button mat-menu-item><i class="fa-solid fa-building"></i>Company</button>
+  <button mat-menu-item><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+</mat-menu>

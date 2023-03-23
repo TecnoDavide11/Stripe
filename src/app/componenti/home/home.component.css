@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.contenitore{
+  background: url('/assets/blurry-gradient-haikei.svg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  font-family: 'Passion One', cursive;
+  font-size: 45px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+h1:hover{
+  cursor: pointer;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  margin: 0 30px;
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 18px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+.container{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box1{
+  margin-bottom: 50px;
+}
+
+#box2{
+
+}
+
+h2{
+  font-size: 80px;
+  font-weight: 800;
+}
+
+p{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#box2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  max-width: 40%;
+}
+
+img{
+height: 100%;
+}
+
+.menu{
+  display: none;
+}
+
+
+
+@media (max-width:1000px){
+  h2{
+    font-size: 60px;
+  }
+}
+
+
+@media (max-width:760px){
+
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container{
+    margin-top: 20px;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  ul, .login{
+    display: none;
+  }
+
+
+  h2{
+    font-size: 50px;
+  }
+
+  p{
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  #box2{
+    max-width: 80%;
+    margin-bottom: 120px;
+  }
+}
+
+
+
